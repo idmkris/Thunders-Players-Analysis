@@ -1,0 +1,10 @@
+<div>
+  <mat-nav-list class="custom-nav-list">
+    <mat-list-item class="items"
+      *ngFor="let player of players"
+      (click)="navigateToPlayer(player)"
+    >
+      {{ player.name }}
+    </mat-list-item>
+  </mat-nav-list>
+</div>

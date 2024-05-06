@@ -1,0 +1,25 @@
+@import '~@angular/material/theming';
+
+.custom-toolbar {
+    font-family: 'Roboto', sans-serif;
+    
+  }
+  
+.align-center {
+    display: inline-flex;
+    align-items: center;
+}
+
+.centered-element {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+  }
+
+.title {
+    margin-right: 30px;
+}
+
+
+
+

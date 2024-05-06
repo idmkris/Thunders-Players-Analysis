@@ -1,0 +1,42 @@
+table {
+  width: 75%;
+  align-content: center;
+}
+
+.player-profile-container {
+  display: flex;
+  flex-direction: column; /* To stack the table vertically */
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+
+}
+
+td,
+th {
+  text-align: center !important;
+  vertical-align: middle !important;
+}
+
+.mat-sort-header-container {
+  justify-content: center !important;
+}
+
+.name {
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8vh;
+    padding-top: 25px;
+}
+
+.spacer {
+    margin-top: 30px; /* Adjust the value to control the amount of space */
+  }
+
+.chart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10
+}

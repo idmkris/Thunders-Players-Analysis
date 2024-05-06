@@ -1,0 +1,24 @@
+player-summary-component {
+  .placeholder {
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.court {
+  position: relative;
+  width: 600px; /* Set the width of your basketball court image */
+  height: 300px; /* Set the height of your basketball court image */
+}
+
+.shot {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: red; /* Customize the color of the shooting spot */
+  border-radius: 50%;
+}
+
+

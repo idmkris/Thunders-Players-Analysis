@@ -1,0 +1,24 @@
+
+.custom-nav-list {
+    font-size: 14px; 
+    padding: 8px; 
+    margin: 1.5cm;
+    block-size: 1px;
+  }
+  
+  
+  .mat-list-item {
+    background-color: #f0f0f0; 
+    color: #333; 
+    transition: background-color 0.3s ease; 
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding: 8px 12px; 
+  }
+  
+  
+  .mat-list-item:hover {
+    background-color: rgb(28, 179, 234);
+  }
+  

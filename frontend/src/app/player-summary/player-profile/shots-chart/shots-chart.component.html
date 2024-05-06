@@ -1,0 +1,16 @@
+<div>
+  <form>
+    <mat-form-field>
+      <mat-label>Shots Chart</mat-label>
+      <mat-select
+        [(ngModel)]="selectedValue"
+        name="date"
+        (selectionChange)="onDateSelectionChange()"
+      >
+        <mat-option *ngFor="let date of dates" [value]="date.value">
+          {{ date.value }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </form>
+</div>

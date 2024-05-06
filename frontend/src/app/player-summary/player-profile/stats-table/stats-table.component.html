@@ -1,0 +1,83 @@
+<h1 class="name">{{playerData?.name}}</h1>
+<div class="player-profile-container">
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+          <ng-container matColumnDef="GAME">
+            <th mat-header-cell *matHeaderCellDef> BY GAME </th>
+            <td mat-cell *matCellDef="let element"> {{element.GAME}} </td>
+          </ng-container>
+          <ng-container matColumnDef="MIN">
+            <th mat-header-cell *matHeaderCellDef> MIN </th>
+            <td mat-cell *matCellDef="let element"> {{element.MIN}} </td>
+          </ng-container>
+          <ng-container matColumnDef="PTS">
+            <th mat-header-cell *matHeaderCellDef> PTS </th>
+            <td mat-cell *matCellDef="let element"> {{element.PTS}} </td>
+          </ng-container>
+          <ng-container matColumnDef="AST">
+            <th mat-header-cell *matHeaderCellDef> AST </th>
+            <td mat-cell *matCellDef="let element"> {{element.AST}} </td>
+          </ng-container>
+          <ng-container matColumnDef="OREB">
+            <th mat-header-cell *matHeaderCellDef> OREB </th>
+            <td mat-cell *matCellDef="let element"> {{element.OREB}} </td>
+          </ng-container>
+          <ng-container matColumnDef="DREB">
+            <th mat-header-cell *matHeaderCellDef> DREB </th>
+            <td mat-cell *matCellDef="let element"> {{element.DREB}} </td>
+          </ng-container>
+          <ng-container matColumnDef="STL">
+            <th mat-header-cell *matHeaderCellDef> STL </th>
+            <td mat-cell *matCellDef="let element"> {{element.STL}} </td>
+          </ng-container>
+          <ng-container matColumnDef="BLK">
+            <th mat-header-cell *matHeaderCellDef> BLK </th>
+            <td mat-cell *matCellDef="let element"> {{element.BLK}} </td>
+          </ng-container>
+          <ng-container matColumnDef="TOV">
+            <th mat-header-cell *matHeaderCellDef> TOV </th>
+            <td mat-cell *matCellDef="let element"> {{element.TOV}} </td>
+          </ng-container>
+          <ng-container matColumnDef="DF">
+            <th mat-header-cell *matHeaderCellDef> DF </th>
+            <td mat-cell *matCellDef="let element"> {{element.DF}} </td>
+          </ng-container>
+          <ng-container matColumnDef="OF">
+            <th mat-header-cell *matHeaderCellDef> OF </th>
+            <td mat-cell *matCellDef="let element"> {{element.OF}} </td>
+          </ng-container>
+          <ng-container matColumnDef="FTM">
+            <th mat-header-cell *matHeaderCellDef> FTM </th>
+            <td mat-cell *matCellDef="let element"> {{element.FTM}} </td>
+          </ng-container>
+          <ng-container matColumnDef="FTA">
+            <th mat-header-cell *matHeaderCellDef> FTA </th>
+            <td mat-cell *matCellDef="let element"> {{element.FTA}} </td>
+          </ng-container>
+          <ng-container matColumnDef="TPM">
+            <th mat-header-cell *matHeaderCellDef> TPM </th>
+            <td mat-cell *matCellDef="let element"> {{element.TPM}} </td>
+          </ng-container>
+          <ng-container matColumnDef="TPA">
+            <th mat-header-cell *matHeaderCellDef> TPA </th>
+            <td mat-cell *matCellDef="let element"> {{element.TPA}} </td>
+          </ng-container>
+          <ng-container matColumnDef="THPM">
+            <th mat-header-cell *matHeaderCellDef> THPM </th>
+            <td mat-cell *matCellDef="let element"> {{element.THPM}} </td>
+          </ng-container>
+          <ng-container matColumnDef="THPA">
+            <th mat-header-cell *matHeaderCellDef> THPA </th>
+            <td mat-cell *matCellDef="let element"> {{element.THPA}} </td>
+          </ng-container>
+          <ng-container matColumnDef="STARTER">
+            <th mat-header-cell *matHeaderCellDef> STARTER </th>
+            <td mat-cell *matCellDef="let element"> {{element.STARTER}} </td>
+          </ng-container>
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+    <div class="spacer"></div>
+<app-shots-chart class="chart"></app-shots-chart>
+
+      
