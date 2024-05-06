@@ -1,0 +1,17 @@
+Team Model: This model represents basketball teams. It contains an auto-incremented primary key (id) and a field for the team's name (name).
+
+Player Model: The player model represents basketball players. It includes an auto-incremented primary key (id) and a field for the player's name (name).
+
+Game Model: This model represents basketball games. It includes an auto-incremented primary key (id) and the following fields:
+hometeam and awayteam: These are foreign keys that establish relationships with the Team model. They represent the home and away teams in a game.
+date: This field stores the date of the game.
+players: This is a many-to-many relationship with the Player model through the Stats model, representing the players who participated in the game.
+
+Shot Model: The shot model represents individual basketball shots taken during a game. It includes the following fields:
+player and game: These are foreign keys that establish relationships with the Player and Game models, linking shots to specific players and games.
+isMake: This Boolean field indicates whether the shot was successful or not.
+location_x and location_y: These fields store the coordinates of the shot's location.
+
+Stats Model: The stats model represents player statistics for each game. It includes the following fields:
+player and game: These are foreign keys that establish relationships with the Player and Game models, linking statistics to specific players and games.
+Various fields for player statistics such as points, assists, rebounds, steals, blocks, etc.
